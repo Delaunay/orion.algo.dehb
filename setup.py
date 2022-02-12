@@ -21,16 +21,14 @@ setup_args = dict(
         os.path.join(repo_root, "README.rst"), "rt", encoding="utf8"
     ).read(),
     license="BSD-3-Clause",
-    author=u"Epistimio",
+    author="Epistimio",
     author_email="xavier.bouthillier@mila.quebec",
     url="https://github.com/Epistimio/orion.algo.dehb",
     packages=["orion.algo.dehb"],
     package_dir={"": "src"},
     include_package_data=True,
     entry_points={
-        "BaseAlgorithm": [
-            "dehb_DEHB = orion.algo.dehb.dehb:DEHB"
-        ],
+        "BaseAlgorithm": ["dehb_DEHB = orion.algo.dehb.dehb:DEHB"],
     },
     install_requires=["orion>=0.1.15", "numpy"],
     tests_require=tests_require,
